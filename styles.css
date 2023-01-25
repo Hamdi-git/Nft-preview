@@ -1,0 +1,121 @@
+    .attribution { font-size: 11px; text-align: center; margin: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    :root {
+        --color-primary-1: hsl(215, 51%, 70%); /* text base */
+        }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        background-color: #0d1a2d;
+        font-family: "outfit";
+        color: white;
+    }
+    h1 {
+        margin: 25px 0 0 0;
+        cursor: pointer;
+    }
+    .card {
+        background-color: #15273f;
+        border-radius: 1rem;
+        width: 350px;
+        padding: 1rem;
+        
+    }
+    .image{
+        background-image: url(./images/image-equilibrium.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        background-position: center;
+        border-radius: 10px;
+        width: auto;
+        height: 280px;
+    }
+    .spans {
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0 0 0;
+    }
+
+    span img {
+        margin-bottom: -3px;
+        margin-right: 5px;
+    }
+    .card-content span:nth-child(1) {
+        color: hsl(178deg 100% 50%);
+    }
+    .card-content span:nth-child(2) {
+        color: var(--color-primary-1);
+    }
+   
+    section.creator {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+    .creator-img{
+        background-image: url(./images/image-avatar.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        overflow: hidden;
+        height: 40px;
+        width: 40px;
+        border: 2px solid white;
+        border-radius: 124px;
+    }
+    .disc {
+        font-weight: 100;
+        font-size: 18px;
+        margin: 15px 0 0 0;
+    }
+    p {
+        color: var(--color-primary-1);
+    }
+    .creator-info {
+        text-align: center;
+        margin: 0 0 0 20px;
+    }
+    .creator-info span{
+        color: white;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+    .creator-info p::first-letter{
+        text-transform: capitalize;
+    }
+    hr {
+    margin: 20px 0 5px;
+    border: none;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(108 172 218)10% 90%, rgba(0, 0, 0, 0));
+    }
+    
+    section.card-image.image .hoverview {
+        display: none;
+    }
+    section.card-image.image:hover .hoverview {
+        display: block;
+        position: absolute;
+        height: inherit;
+        width: 318px;
+        background: #00fff88c;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    section.card-image.image:hover~.card-content h1,
+    section.card-image.image:hover~.creator .creator-info p span{
+        color: aqua;
+    }
